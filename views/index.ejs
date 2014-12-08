@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<% if(!isAuthenticated) { %>
+	<h1><%= isAuthenticated %></h1>
+	<a href="/login">Login</a>
+<% } else { %>	
+	<h1>hello <% user.id %></h1>	
+<% } %>
+</body>
+</html>
